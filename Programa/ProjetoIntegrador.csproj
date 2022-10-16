@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01DFC46F-B43D-43D3-ADC0-63D9D1FB482A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoIntegrador</RootNamespace>
+    <AssemblyName>ProjetoIntegrador</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.cs" />
+    <Compile Include="ClientesDAO.cs" />
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_BuscaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscaProduto.Designer.cs">
+      <DependentUpon>Frm_BuscaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Clientes.Designer.cs">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_funcionarios.Designer.cs">
+      <DependentUpon>Frm_funcionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Funcoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Funcoes.Designer.cs">
+      <DependentUpon>Frm_Funcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ListaVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ListaVenda.Designer.cs">
+      <DependentUpon>Frm_ListaVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao.cs" />
+    <Compile Include="FuncaoDAO.cs" />
+    <Compile Include="FuncionarioDAO.cs" />
+    <Compile Include="Funcionarios.cs" />
+    <Compile Include="Frm_Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Produtos.Designer.cs">
+      <DependentUpon>Frm_Produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutoDAO.cs" />
+    <Compile Include="Produtos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Frm_Vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Vendas.Designer.cs">
+      <DependentUpon>Frm_Vendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas.cs" />
+    <Compile Include="VendasDAO.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BuscaProduto.resx">
+      <DependentUpon>Frm_BuscaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Clientes.resx">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_funcionarios.resx">
+      <DependentUpon>Frm_funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Funcoes.resx">
+      <DependentUpon>Frm_Funcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListaVenda.resx">
+      <DependentUpon>Frm_ListaVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Produtos.resx">
+      <DependentUpon>Frm_Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Frm_Vendas.resx">
+      <DependentUpon>Frm_Vendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoppingBag_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping-basket-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventory-maintenance-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inventory-maintenance-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male-user-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City-Market-Square-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business-Manager-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ecommerce-Product-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ecommerce-Shopping-Basket-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ecommerce-Shopping-Bag-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Interface-Zoom-In-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-as-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486505375-edit-pen-change-option-pencil-write_81422%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_43288_3e1c3ef46aaa8b57458d2df424f99f1e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bazar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4873137.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_624802043-1-770x478-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48731371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network-offline-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network-offline-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycle-bin-empty-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\write-document-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy-driver-5-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy-driver-5-icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-panel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-panel-icon %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
